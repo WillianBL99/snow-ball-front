@@ -51,7 +51,7 @@ export default function Video() {
                 </Questions>
             </>
                 : <></>}
-            <button onClick={() => setAnswer(!answer)}>Mostrar Respostas</button>
+            <button onClick={() => setAnswer(!answer)}>{answer?"Mostrar Respostas":"Esconder Respostas"}</button>
         </Main>
     );
 }
