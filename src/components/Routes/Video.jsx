@@ -51,7 +51,10 @@ export default function Video() {
                 </Questions>
             </>
                 : <></>}
-            <button onClick={() => setAnswer(!answer)}>{answer?"Mostrar Respostas":"Esconder Respostas"}</button>
+            <Buttons>
+                <button onClick={() => alert("Infelizmente não deu tempo de implementar no front :'(")}>Adicionar pergunta</button>
+                <button onClick={() => setAnswer(!answer)}>{answer ? "Mostrar Respostas" : "Esconder Respostas"}</button>
+            </Buttons>
         </Main>
     );
 }
@@ -71,15 +74,6 @@ const Main = styled.main`
         font-weight:bold;
     }
 
-    button{
-        width: 300px;
-        height: 60px;
-        font-size: 25px;
-        position: fixed;
-        bottom: 10px;
-        right: calc(50vw - 150px);
-        border-radius: 10px;
-    }
 `
 
 const Questions = styled.div`
@@ -106,5 +100,19 @@ const Questions = styled.div`
         .answer {
             color: red;
         }
+    }
+`
+const Buttons = styled.div`
+    width:100%;
+    max-width:500px;
+    position: fixed;
+    bottom: 10px;
+    left: calc(50vw - 170px);
+    button{
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 10px;
+        margin: 10px;
     }
 `
