@@ -27,7 +27,7 @@ export default function MainScreen() {
     <ContainerMainScreen>
       <span className="topo">
         <BotoesTopo>
-          <Link to={"/create"}>
+          <Link to={"/create-video"}>
             <ion-icon name="alert-outline"></ion-icon>
           </Link>
           <p>Criar</p>
