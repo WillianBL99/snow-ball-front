@@ -5,7 +5,7 @@ export default function CreateVideo() {
   const [body,setBody]=useState({title:'',type:'',link:'',email:''})
   function criarVideo(evt){
     evt.preventDefault()
-    const promessa=axios.post('',body)
+    const promessa=axios.post('http://localhost:5000/videos',body)
     promessa.then(()=>console.log('criado com sucesso'))
     promessa.catch((e)=>console.log('erro ao criar video'))
   }

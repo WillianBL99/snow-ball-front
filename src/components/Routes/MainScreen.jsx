@@ -98,11 +98,6 @@ const Caixote = styled.div`
       background: #137f6b;
     }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #0c6050;
-    }
-
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
       background: #0c6050;

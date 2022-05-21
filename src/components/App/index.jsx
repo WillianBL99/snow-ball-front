@@ -7,6 +7,7 @@ import CreateVideo from '../Routes/CreateVideo';
 
 import Login from '../Routes/Login';
 import MainScreen from '../Routes/MainScreen';
+import Video from '../Routes/Video';
 import { Provider } from '../../hooks/UserContext';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
         <Route path='/create-video' element={<CreateVideo />} />
           <Route path='/main-screen' element={<MainScreen />} />
+          <Route path='/videos/:id' element={<Video />} />
           <Route path='/' element={<Login />} />
         </Routes>
       </BrowserRouter>
