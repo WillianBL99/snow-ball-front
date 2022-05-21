@@ -1,0 +1,42 @@
+* {
+	--font-logo: 'Quicksand', sans-serif;
+	--font-main: 'Quicksand', sans-serif;
+
+	--color-1:#e9dfe0;
+	--color-2:#a43acb;
+	--color-3:#4a15f7;
+	--color-4:#0e0a18;
+
+  --color-button: var(--color-2);
+  --padding-login: 1rem;
+
+	box-sizing: border-box;
+}
+
+
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	
+	display: flex;
+	flex-direction: column;
+	
+	font-family: var(--font-family-main);
+	background-color: var(--color-1);
+	
+}
+
+.root{  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 100vw;
+	height: 100vh;
+
+	font-family: var(--font-main);
+	font-size: var(--font-size-main);
+	
+}
