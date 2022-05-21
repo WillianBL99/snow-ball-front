@@ -3,6 +3,7 @@ import '../../styled/css/index.css';
 import '../../styled/css/query.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CreateVideo from '../Routes/CreateVideo';
 
 import Login from '../Routes/Login';
 import MainScreen from '../Routes/MainScreen';
@@ -14,6 +15,7 @@ function App() {
     <Provider>
       <BrowserRouter>
         <Routes>
+        <Route path='/create-video' element={<CreateVideo />} />
           <Route path='/main-screen' element={<MainScreen />} />
           <Route path='/videos/:id' element={<Video />} />
           <Route path='/' element={<Login />} />
