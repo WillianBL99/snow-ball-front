@@ -83,6 +83,7 @@ const ContainerLogin = styled.section`
   padding: var(--padding-login);
 
   &>form h1 {
+    font-family: var(--font-logo);
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
