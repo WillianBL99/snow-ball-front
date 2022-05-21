@@ -16,7 +16,7 @@ export default function Login() {
   function handleLogin(event) {
     event.preventDefault();
     navigate("/main-screen");
-    /* const promise = axios.post(`${url}/users`, loginData);
+    const promise = axios.post(`${url}/users`, loginData);
 
     promise.then((res) => {
       storeLogin(res.data);
@@ -24,7 +24,7 @@ export default function Login() {
     });
     promise.catch((error) => {
       console.log(error.response);
-    }); */
+    }); 
   }
 
   function storeLogin(res) {
