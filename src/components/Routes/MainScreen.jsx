@@ -67,7 +67,6 @@ overflow:hidden;overflow-y:scroll;
   background: #0c6050; 
 }
 }
-}
 `
 
 const ContainerMainScreen = styled.section`
